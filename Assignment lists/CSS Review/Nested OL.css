@@ -2,10 +2,7 @@
 .oul {
 	list-style-type: upper-roman;
 }
-.pink {
-    
-    background-color: pink;
-}
+
 .mil {
     list-style-type: upper-alpha;
    
@@ -14,10 +11,16 @@
     
     background-color: blue;
 }
+
 .inl {
     list-style-type: numeric;
 }
-.red {
-    
+.com{
+    background-color: pink;
+}
+.mid {
+    background-color: blue;
+}
+.spt {
     background-color: red;
 }
