@@ -5,3 +5,4 @@ for (let i = 2; i < 20; i++) {
     fib.push(fib[i]);
 }
 console.log(fib);
+document.write(`<p>The first 20 numbers in the Fibonacci series: ${fib.join(", ")}.</p>`);

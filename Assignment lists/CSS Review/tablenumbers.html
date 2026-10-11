@@ -7,6 +7,19 @@
     </head>
     <body>
         <h1>Table of Numbers</h1>
-        <script src="tablenumbers.js"></script>
+        <script> 
+            
+            let table = "Number".padEnd(8) + "Square".padEnd(8) + "Cube\n";
+            for (let num = 5; num <= 15; num++) {
+                let square = num * num;
+                let cube = num * num * num;
+
+                let col1 = String(num).padEnd(15);
+                let col2 = String(square).padEnd(11);
+                let col3 = String(cube);
+                table += `${col1}${col2}${col3}\n`;
+            }
+            alert(table);
+        </script>
     </body>
 </html>
