@@ -4,13 +4,18 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document Object Model</title>
+        <link rel="stylesheet" href="test.css">
     </head>
     <body>
         <form>
-            <input type="text" name="lastname" required=True label="Last Name:" placeholder="Enter your lastname:">
-            <input type="text" name="firstname" required=True placeholder="Enter your firstname:">
-            <input type="text" name="middleInitial" placeholder="Middle initial:">
-            <input type="number" name="age" required=True placeholder="Enter your age:">
+            <label for="lastname">Last Name:</label>
+            <input id="lastname" type="text" name="lastname" required=True label="Last Name:" ><br>
+            <label for="firstname">First Name:</label>
+            <input id="firstname" type="text" name="firstname" required=True ><br>
+            <label for="midInitial">Middle Initial:</label>
+            <input type="text" name="middleInitial" ><br>
+            <label for="age">Age:</label>
+            <input id="age" type="number" name="age" required=True ><br>
             <script>
                 document.querySelector('form').addEventListener('submit', function(e) {
                     e.preventDefault();
@@ -22,7 +27,8 @@
                     }
                 });
             </script>
-            <input type="number" name="weight" required=True placeholder="Enter your weight:">
+            <label for="weight">Weight:</label>
+            <input id="weight" type="number" name="weight" required=True ><br>
             <script>
                 document.querySelector('form').addEventListener('submit', function(e){
                     e.preventDefault();
@@ -39,7 +45,7 @@
                     
                 });
             </script>
-            
+            <button type="submit" name="Submit" aria-placeholder="Submit">Submit</button>
         </form>
     </body>
 </html>

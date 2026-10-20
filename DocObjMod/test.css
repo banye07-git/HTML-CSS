@@ -1,0 +1,28 @@
+body {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    margin: 0;
+}
+
+form {
+    text-align: center;
+}
+
+form label {
+    display: inline-block;
+    width: 110px;
+    margin-right: 10px;
+    text-align: right;
+}
+
+form input {
+    width: 220px;
+    margin: 0 0 10px;
+}
+button{
+    background-color: aquamarine;
+    padding: 5px;
+    border-radius: 10px;
+    font-weight: bold;
+}
