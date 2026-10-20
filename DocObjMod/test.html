@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">   
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document Object Model</title>
+    </head>
+    <body>
+        <form>
+            <input type="text" name="lastname" required=True label="Last Name:" placeholder="Enter your lastname:">
+            <input type="text" name="firstname" required=True placeholder="Enter your firstname:">
+            <input type="text" name="middleInitial" placeholder="Middle initial:">
+            <input type="number" name="age" required=True placeholder="Enter your age:">
+            <script>
+                document.querySelector('form').addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    const age = parseInt(document.querySelector('input[name="age"]').value);
+                    if (age < 18) {
+                        alert("Underage");
+                    } else {
+                        alert("Welcome!");
+                    }
+                });
+            </script>
+            <input type="number" name="weight" required=True placeholder="Enter your weight:">
+            <script>
+                document.querySelector('form').addEventListener('submit', function(e){
+                    e.preventDefault();
+                    const weight = parseInt(document.querySelector('input[name="weight"]').value);
+                    if (weight < 80){
+                        alert("Underweight!")                    
+                    }
+                    else if (weight > 300){
+                        alert("Overweight!");
+                    }
+                    else if (weight in range(80,300)){
+                        alert("Welcome!")
+                    }
+                    
+                });
+            </script>
+            
+        </form>
+    </body>
+</html>
